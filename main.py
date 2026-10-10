@@ -18,10 +18,10 @@ def records(data:Register):
     cursor=con.cursor()
 
 
-    query="""" INSERT INTO students(first_name,second_name,mail,
+    query="""INSERT INTO students (first_name,second_name,mail,
     age,department,address,next_of_kin,next_of_kin_phone)
     VALUES(%s,%s,%s,%s,%s,%s,%s,%s)
-    RETURNING_id;
+    RETURNING id;
     """
 
     cursor.execute(
@@ -30,7 +30,7 @@ def records(data:Register):
             data.next_of_kin_phone
         )
     )
-    student_id=cursor.fetchon()
+    student_id=cursor.fetchone()
 
     con.commit()
     cursor.close()

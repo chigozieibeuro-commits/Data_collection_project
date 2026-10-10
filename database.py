@@ -4,7 +4,10 @@ def connection():
     con=psycopg2.connect(
         host="db",
         user="postgres",
-        database="school_reg",
+        database="registry",
         password="password",
         port="5432"
     )
+
+
+    return con
