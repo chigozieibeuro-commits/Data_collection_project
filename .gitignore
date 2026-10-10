@@ -3,4 +3,4 @@ ven/
 --pycache__/
 *.pyc
 .env
-.idea
+.idea/
