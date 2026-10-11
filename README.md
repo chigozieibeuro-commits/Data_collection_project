@@ -1,7 +1,7 @@
 Class Registration API
 Brief:
 
-A simple backend project built with FastAPI and PostgreSQL to collect and store student registration details. Docker was used to containerize the application and database.
+A simple backend project built with FastAPI and PostgreSQL to take  and store student registration details. Docker was used to containerize the application and database.
 
 Technologies
 
